@@ -21,12 +21,6 @@
         </activity>
 
         <service android:name=".MyIntentService" />
-        <service
-            android:name=".MyService2"
-            android:enabled="true"
-            android:exported="true">
-
-        </service>
     </application>
 
 </manifest>
