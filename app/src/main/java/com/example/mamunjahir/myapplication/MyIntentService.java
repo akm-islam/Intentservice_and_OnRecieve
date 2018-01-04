@@ -22,24 +22,7 @@ public class MyIntentService extends IntentService
         Bundle b=new Bundle();
         b.putString("result","Counter starts");
         rr.send(ServiceDemo.RESULT_CODE,b);
-
-        while(cstart<10)
-        {
-            Log.v(TAG,"counter now is "+cstart);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            b.putString("result","Counter now is "+cstart);
-            rr.send(ServiceDemo.RESULT_CODE,b);
-
-            cstart++;
-        }
-
-        b.putString("result","Counter is finished ");
+        b.putString("result2","I am result2");
         rr.send(ServiceDemo.RESULT_CODE,b);
-
-
     }
 }

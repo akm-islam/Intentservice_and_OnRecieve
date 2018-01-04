@@ -24,7 +24,6 @@ public class ServiceDemo extends Activity
     {
         Intent ii=new Intent(this,MyIntentService.class);
         ResultReceiver r=new myreceiver(null);
-        ii.putExtra("counter",2);
         ii.putExtra("receiver",r);
         startService(ii);
     }
